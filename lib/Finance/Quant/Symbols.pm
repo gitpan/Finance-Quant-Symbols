@@ -26,7 +26,7 @@ our @EXPORT = qw(
 new
 );
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 
@@ -48,7 +48,6 @@ sub DESTROY {
     my $self = shift;
     warn "DESTROYING $self";
 }
-1;
 
 
 
@@ -78,7 +77,12 @@ sub DESTROY {
 
 Hagen Geissler <santex@cpan.org>
 
+=head1 SEE ALSO
 
+  Finance::Quant;
+
+=cut
+ 
 __DATA__
 =NASDAQ=AAPL
 =CUSTOM=AAPL GOOG C BAC WFC WM F
